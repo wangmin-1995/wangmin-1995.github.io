@@ -46,9 +46,9 @@
       
         <tags>
             
-            <tag> Blog </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> Blog </tag>
             
         </tags>
       
@@ -88,9 +88,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> Git </tag>
-            
             <tag> Blog </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
