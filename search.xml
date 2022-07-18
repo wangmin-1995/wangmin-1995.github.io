@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>「软件」用Clash给Git配置代理解决GitHub慢速问题</title>
-      <link href="/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E7%94%A8Clash%E7%BB%99Git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3GitHub%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98/"/>
-      <url>/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E7%94%A8Clash%E7%BB%99Git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3GitHub%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98/</url>
+      <title>「软件」解决Git慢速问题+Clash全局代理</title>
+      <link href="/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E8%A7%A3%E5%86%B3Git%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98-Clash%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/"/>
+      <url>/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E8%A7%A3%E5%86%B3Git%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98-Clash%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</url>
       
-        <content type="html"><![CDATA[<hr><div class="note blue icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>三种方法，由下面链接整理</p></div><a class="btn-beautify block outline right blue larger" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/1563"   title="[可以给个简单的教程指示一下如何使用clash给git的各种操作加速吗Quq，我看网上的好多端口的设置都看傻眼了 · Issue #1563 · Fndroid/clash_for_windows_pkg (github.com)]"><i class="far fa-hand-point-right"></i><span>[可以给个简单的教程指示一下如何使用clash给git的各种操作加速吗Quq，我看网上的好多端口的设置都看傻眼了 · Issue #1563 · Fndroid/clash_for_windows_pkg (github.com)]</span></a><hr><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a><center>准备</h1><ul><li><input checked="" disabled="" type="checkbox"> 安装<em><strong>「Clash For Windows」</strong></em>软件</li><li><input checked="" disabled="" type="checkbox"> 买机场节点，正确配置</li></ul><h1 id="给终端配置代理"><a href="#给终端配置代理" class="headerlink" title="给终端配置代理"></a><center>给终端配置代理</h1><hr><h1 id="给Git配置代理"><a href="#给Git配置代理" class="headerlink" title="给Git配置代理"></a><center>给Git配置代理</h1><h2 id="Git全局代理"><a href="#Git全局代理" class="headerlink" title="Git全局代理"></a><center>Git全局代理</h2><p>- </p><h2 id="Git前置代理"><a href="#Git前置代理" class="headerlink" title="Git前置代理"></a><center>Git前置代理</h2><hr><h1 id="Clash全局代理"><a href="#Clash全局代理" class="headerlink" title="Clash全局代理"></a><center>Clash全局代理</h1><h2 id="TAP-TUN"><a href="#TAP-TUN" class="headerlink" title="TAP TUN"></a><center>TAP TUN</h2><hr>]]></content>
+        <content type="html"><![CDATA[<hr><h1 id="解决Git慢速问题"><a href="#解决Git慢速问题" class="headerlink" title="解决Git慢速问题"></a><center>解决Git慢速问题</h1><ul><li><p>本地开启代理后，能正常用浏览器访问<em><strong>「Google」</strong></em>等外网，但对<em><strong>「GIt bash」</strong></em>、<em><strong>「Netfilx」</strong></em>等软件无效，这是因为这些软件默认不走代理，需要手动设置</p></li><li><p>给<em><strong>「Git」</strong></em>设置代理</p><a class="btn-beautify block outline right blue larger" href="https://ruby-china.org/topics/40408"   title="[如何提高 Github 的 pull/push 速度 · Ruby China (ruby-china.org)]"><i class="far fa-hand-point-right"></i><span>[如何提高 Github 的 pull/push 速度 · Ruby China (ruby-china.org)]</span></a><img src="https://s2.loli.net/2022/07/18/F6JCWfYcwh8ZGeb.png" alt="image-20220718124615886" style="zoom: 67%;" /><ul><li><p><input disabled="" type="checkbox"> <em><strong>「HTTP」</strong></em>形式的仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy <span class="string">&quot;http://127.0.0.1:8080&quot;</span></span><br><span class="line">git config --global https.proxy <span class="string">&quot;http://127.0.0.1:8080&quot;</span></span><br></pre></td></tr></table></figure><p>设置和取消也可以通过更改配置文件<code>C:\Users\Administrator\.gitconfig</code>进行</p><p>端口号<em><strong>「8080」</strong></em>替换成<em><strong>「Clash」</strong></em>中的端口号</p></li><li><p><input disabled="" type="checkbox"> <em><strong>「SSH」</strong></em>形式的仓库</p><p>在<code>~/.ssh/config </code>设置代理</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    User git</span><br><span class="line">    HostName github.com</span><br><span class="line">    ProxyCommand nc -v -x 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure><p>若无此文件，可新建无后缀文件名<em><strong>「config」</strong></em></p></li></ul></li></ul><hr>]]></content>
       
       
       <categories>
@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> Clash </tag>
+            <tag> git </tag>
             
-            <tag> Git </tag>
+            <tag> clash </tag>
             
         </tags>
       
@@ -41,9 +41,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
