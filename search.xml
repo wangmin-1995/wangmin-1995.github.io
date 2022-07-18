@@ -8,9 +8,23 @@
       <link href="/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E7%94%A8Clash%E7%BB%99Git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3GitHub%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98/"/>
       <url>/2022/%E3%80%8C%E8%BD%AF%E4%BB%B6%E3%80%8D%E7%94%A8Clash%E7%BB%99Git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E8%A7%A3%E5%86%B3GitHub%E6%85%A2%E9%80%9F%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<hr><div class="note blue icon-padding simple"><i class="note-icon fas fa-bullhorn"></i><p>三种方法，由下面链接整理</p></div><a class="btn-beautify block outline right blue larger" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/1563"   title="[可以给个简单的教程指示一下如何使用clash给git的各种操作加速吗Quq，我看网上的好多端口的设置都看傻眼了 · Issue #1563 · Fndroid/clash_for_windows_pkg (github.com)]"><i class="far fa-hand-point-right"></i><span>[可以给个简单的教程指示一下如何使用clash给git的各种操作加速吗Quq，我看网上的好多端口的设置都看傻眼了 · Issue #1563 · Fndroid/clash_for_windows_pkg (github.com)]</span></a><hr><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a><center>准备</h1><ul><li><input checked="" disabled="" type="checkbox"> 安装<em><strong>「Clash For Windows」</strong></em>软件</li><li><input checked="" disabled="" type="checkbox"> 买机场节点，正确配置</li></ul><h1 id="给终端配置代理"><a href="#给终端配置代理" class="headerlink" title="给终端配置代理"></a><center>给终端配置代理</h1><hr><h1 id="给Git配置代理"><a href="#给Git配置代理" class="headerlink" title="给Git配置代理"></a><center>给Git配置代理</h1><h2 id="Git全局代理"><a href="#Git全局代理" class="headerlink" title="Git全局代理"></a><center>Git全局代理</h2><p>- </p><h2 id="Git前置代理"><a href="#Git前置代理" class="headerlink" title="Git前置代理"></a><center>Git前置代理</h2><hr><h1 id="Clash全局代理"><a href="#Clash全局代理" class="headerlink" title="Clash全局代理"></a><center>Clash全局代理</h1><h2 id="TAP-TUN"><a href="#TAP-TUN" class="headerlink" title="TAP TUN"></a><center>TAP TUN</h2><hr>]]></content>
       
       
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Clash </tag>
+            
+            <tag> Git </tag>
+            
+        </tags>
       
     </entry>
     
@@ -27,9 +41,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Git </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
